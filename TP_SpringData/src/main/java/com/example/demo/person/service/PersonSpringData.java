@@ -14,10 +14,10 @@ import org.springframework.stereotype.Repository;
 public class PersonSpringData {
 
 	@Autowired
-	private PersonRep person;
+	private PersonRep person;/*Crud repo*/
 	
 	public List<Person> getPerson(String name){
-		return person.findByfirstName(name);
+		return person.findByfirstName(name);/*generates jpql query*/
 	}
  
 }
