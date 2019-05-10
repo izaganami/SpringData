@@ -14,10 +14,10 @@ import org.springframework.stereotype.Repository;
 public class PersonSpringData {
 
 	@Autowired
-	private PersonRep Amina;
+	private PersonRep person;
 	
 	public List<Person> getPerson(String name){
-		return Amina.findByfirstName(name);
+		return person.findByfirstName(name);
 	}
  
 }
